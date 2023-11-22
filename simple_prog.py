@@ -1,27 +1,27 @@
 import math #for sqrt
 
 
-print("Введите стороны прямоугольника")
-length = int(input("Введите длину прямоугольника:"))
-width = int(input("Введите ширину прямоугольника:")) #enter sides
+print("Enter the sides of the rectangle")
+length = int(input("Enter the length of the rectangle:"))
+width = int(input("Enter the width of the rectangle:")) #enter sides
 
 #defining a rectangle
 
 if length > width:
-    print("Длина больше ширины")
-    name_rectangle = "прямоугольника"
+    print("Length is greater than width")
+    name_rectangle = "rectangle"
 elif length < width:
-    print("Длина меньше ширины")
-    name_rectangle = "прямоугольника"
+    print("Length is less than width")
+    name_rectangle = "rectangle"
 else:
-    print("Длина равна ширине, данный прямоугольник является квадратом!")
-    name_rectangle = "квадрата"
+    print("The length is equal to the width, this rectangle is a square!")
+    name_rectangle = "square"
 
 perimeter_rectangle = (length + width)*2 #perimeter search
-print("Периметр ", name_rectangle, "=", perimeter_rectangle)
+print("Perimeter ", name_rectangle, "=", perimeter_rectangle)
 
 square_rectangle = length*width #area search
-print("Площадь ", name_rectangle, "=", square_rectangle)
+print("Square ", name_rectangle, "=", square_rectangle)
 
 diagonal_main = math.sqrt(length*length + width*width) #diagonal search
-print("Диагональ ", name_rectangle, "=", diagonal_main)
+print("Diagonal ", name_rectangle, "=", diagonal_main)
